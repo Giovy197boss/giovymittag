@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Beauty-Salon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Willkommen im Beauty-Salon</h1>
+    </header>
+    <main>
+        <section id="services">
+            <h2>Unsere Leistungen</h2>
+            <ul>
+                <li>Haarstyling</li>
+                <li>Make-up</li>
+                <li>Maniküre & Pediküre</li>
+                <li>Gesichtsbehandlungen</li>
+            </ul>
+        </section>
+        <section id="appointment">
+            <h2>Termin buchen</h2>
+            <form id="bookingForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="service">Service:</label>
+                <select id="service" name="service">
+                    <option value="haarstyling">Haarstyling</option>
+                    <option value="makeup">Make-up</option>
+                    <option value="manikuere">Maniküre & Pediküre</option>
+                    <option value="gesichtsbehandlung">Gesichtsbehandlung</option>
+                </select><br>
+                <label for="date">Datum:</label>
+                <input type="date" id="date" name="date" required><br>
+                <label for="time">Uhrzeit:</label>
+                <input type="time" id="time" name="time" required><br>
+                <button type="submit">Termin buchen</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Kontakt: 123-456-789 | Email: beauty@salon.de</p>
+    </footer>
+</body>
+</html>
